@@ -1,8 +1,13 @@
 import os
 os.environ["OPENCV_IO_ENABLE_OPENEXR"] = "1"
+
+from ultralytics import YOLO
+import cv2
+
+cv2.setNumThreads(0)
+
 import streamlit as st
 from PIL import Image
-from ultralytics import YOLO
 
 st.title("Kidney Stone Detection")
 
